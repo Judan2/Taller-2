@@ -409,7 +409,7 @@ class TestSandboxArreglos
     @Test
     void testReiniciarArregloCadenas( )
     {
-        Object[] nuevosValores = new Object[]{ new Double( "0.01" ), new Character( 'a' ), "Hello", new Integer( "25" ), new Boolean( false ) };
+        Object[] nuevosValores = new Object[]{ "0.01" , 'a' , "Hello", "25" , false };
 
         sencillo.reiniciarArregloCadenas( nuevosValores );
         assertEquals( nuevosValores.length, sencillo.getCantidadCadenas( ), "La nueva cantidad de cadenas no es la correcta" );
